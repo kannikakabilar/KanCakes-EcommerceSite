@@ -47,6 +47,11 @@ Go to the browser to this url: http://localhost:4200 and explore through the Kan
 │   │   ├── favicon.ico
 │   │   ├── index.html
 │   │   ├── app/
+│   │   │   ├── app-routing.module.ts
 │   │   └── assets/
+│   │   │   ├── css/
+│   │   │   ├── img/
+│   │   │   └── js/
+
 
 ```
