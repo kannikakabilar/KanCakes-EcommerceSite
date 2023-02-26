@@ -94,15 +94,15 @@ Go to the browser to this url: http://localhost:4200 and explore through the Kan
 │   │   ├── index.html
 │   │   ├── app/
 │   │   │   ├── app-routing.module.ts
-│   │   │   ├── app.component.css
-│   │   │   ├── app.component.html
-│   │   │   ├── app.component.spec.ts
-│   │   │   ├── app.component.ts
-│   │   │   └── app.module.ts
+│   │   │   ├── app.component.css (contains css for form validation)
+│   │   │   ├── app.component.html (contains all elements that are presented on the webpage)
+│   │   │   ├── app.component.spec.ts (would contain unit testing of elements)
+│   │   │   ├── app.component.ts (contains properties, functions, customer review data, and etc.)
+│   │   │   └── app.module.ts (contains imported modules)
 │   │   └── assets/
-│   │   │   ├── css/
-│   │   │   ├── img/
-│   │   │   └── js/
+│   │   │   ├── css/ (contains most css of the main html file)
+│   │   │   ├── img/ (contains all images used in the webpage)
+│   │   │   └── js/ (main.js contains functionality of navbar, carousel, and etc.)
 ________________________________________
 
 
