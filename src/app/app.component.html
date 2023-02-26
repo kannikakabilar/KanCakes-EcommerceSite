@@ -1,0 +1,527 @@
+<!-- Loader Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-grow text-icon" role="status"></div>
+</div>
+<!-- Loader End -->
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+  <a href="https://kannikakabilar.github.io/" class="navbar-brand ms-4 ms-lg-0">
+      <h1 class="text-primary m-0">KanCakes</h1>
+  </a>
+  <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto p-4 p-lg-0">
+          <a href="https://kannikakabilar.github.io/" class="nav-item nav-link active">Home</a>
+          <a href="#kancakes_about" class="nav-item nav-link">About</a>
+          <a href="#kancakes_products" class="nav-item nav-link">Products</a>
+          <a href="#kancakes_services" class="nav-item nav-link">Services</a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+              <div class="dropdown-menu m-0">
+                  <a href="#kancakes_team" class="dropdown-item">Our Team</a>
+                  <a href="#kancakes_testimonial" class="dropdown-item">Testimonial</a>                  
+              </div>
+          </div>
+          <a href="#kancakes_contact" class="nav-item nav-link">Contact</a>
+      </div>
+      <div class=" d-none d-lg-flex">
+          <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+              <i class="fa fa-phone text-primary"></i>
+          </div>
+          <div class="ps-3">
+              <small class="text-primary mb-0">Call Us: </small>
+              <p class="text-light fs-5 mb-0">XXX XXX CAKE</p>
+          </div>
+      </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s" style="color:#00006b;">
+  <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="assets/img/carousel-3.jpg" alt="">
+          <div class="owl-carousel-inner">
+              <div class="container">
+                  <div class="row justify-content-start">
+                      <div class="col-lg-8">
+                          <p class="text-uppercase fw-bold mb-2" style="color:#fcf8d7;">{{ description_title }}</p>
+                          <h1 class="display-1 text-light mb-4 animated slideInDown">Everlasting <br> Cake Things</h1>
+                          <p class="text-light fs-5 mb-4 pb-3">Life is sweet, savor the sweet. If not, take a break, have a cake.</p>
+                          <button class="btn btn-primary rounded-pill py-3 px-5" style="background-color: #00022b; border-color: white;">Breakfast now for only {{ 10 | price : can | currency : curr}} !</button>
+                          <br><br><button class="btn btn-secondary rounded-pill py-2 px-4" (click)="changeCurrency()">Switch to {{ country }} Site</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="assets/img/carousel-4.jpg" alt="">
+        <div class="owl-carousel-inner">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-lg-8">
+                        <p class="text-uppercase fw-bold mb-2" style="color:#fcf8d7;">{{ description_title }}</p>
+                        <h1 class="display-1 text-light mb-4 animated slideInDown">Cheese Cake <br> for your take</h1>
+                        <p class="text-light fs-5 mb-4 pb-3">Perfected the balance between taste and nutrition</p>
+                        <button class="btn btn-primary rounded-pill py-3 px-5" style="background-color: #00022b; border-color: white;">Cheesecake slice now for only {{ 7 | price : can | currency : curr}} !</button>
+                        <br><br><button class="btn btn-secondary rounded-pill py-2 px-4" (click)="changeCurrency()">Switch to {{ country }} Site</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+          <img class="img-fluid" src="assets/img/carousel-5.jpg" alt="">
+          <div class="owl-carousel-inner">
+              <div class="container">
+                  <div class="row justify-content-start">
+                      <div class="col-lg-8">
+                          <p class="text-uppercase fw-bold mb-2" style="color:#fcf8d7;">{{ description_title }}</p>
+                          <h1 class="display-1 text-light mb-4 animated slideInDown">Freshly Baked <br> Macaron Cakes</h1>
+                          <p class="text-light fs-5 mb-4 pb-3">Uniquely prepared to deliver soft and sweet macarons</p>
+                          <button class="btn btn-primary rounded-pill py-3 px-5" style="background-color: #00022b; border-color: white;">Macaron box now for only {{ 9 | price : can | currency : curr}} !</button>
+                          <br><br><button class="btn btn-secondary rounded-pill py-2 px-4" (click)="changeCurrency()">Switch to {{ country }} Site</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Carousel End -->
+<!-- Facts Start -->
+<div class="container-xxl py-6">
+  <div class="container">
+      <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="fact-item bg-light rounded text-center h-100 p-5">
+                  <i class="fa fa-certificate fa-4x text-icon mb-4"></i>
+                  <p class="mb-2">Years Experience</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">99</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+              <div class="fact-item bg-light rounded text-center h-100 p-5">
+                  <i class="fa fa-users fa-4x text-icon mb-4"></i>
+                  <p class="mb-2">Skilled Professionals</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">437</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+              <div class="fact-item bg-light rounded text-center h-100 p-5">
+                  <i class="fa fa-bread-slice fa-4x text-icon mb-4"></i>
+                  <p class="mb-2">Total Products</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">779</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+              <div class="fact-item bg-light rounded text-center h-100 p-5">
+                  <i class="fa fa-cart-plus fa-4x text-icon mb-4"></i>
+                  <p class="mb-2">Order Everyday</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">9475</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Facts End -->
+<!-- About Start -->
+<div id="kancakes_about" class="container-xxl py-6">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" [hidden]="orgAboutPics" data-wow-delay="0.1s">
+              <div class="row img-twice position-relative h-100">
+                  <div class="col-6">
+                      <img class="img-fluid rounded" src="assets/img/about-3.jpg" alt="">
+                  </div>
+                  <div class="col-6 align-self-end">
+                      <img class="img-fluid rounded" src="assets/img/about-4.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" [hidden]="otherAboutPics" data-wow-delay="0.1s">
+            <div class="row img-twice position-relative h-100">
+                <div class="col-6">
+                    <img class="img-fluid rounded" src="assets/img/about-5.jpg" alt="">
+                </div>
+                <div class="col-6 align-self-end">
+                    <img class="img-fluid rounded" src="assets/img/about-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100">
+                  <p class="text-icon text-uppercase mb-2">About Us</p>
+                  <h1 class="display-6 mb-4" style="color:rgb(0, 0, 107);">Each of our items are baked and prepared with precision and passion</h1>
+                  <p>We offer a wide variety of sweet and healthy baked snacks. Each order is prepared from scratch to ensure that only fresh products are delivered to our customers.</p>
+                  <p>Our ingredients are as important as our customers, all natural, and locally sourced. Our cooking equipments are verified to be eco-friendly because we consider the impact on the world, in everything we do.</p>
+                  <div class="row g-2 mb-4">
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-iconl me-2"></i>Quality Products
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-iconl me-2"></i>Custom Products
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-iconl me-2"></i>Online Order
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-iconl me-2"></i>Home Delivery
+                      </div>
+                  </div>
+                  <button class="btn btn-primary rounded-iconl py-3 px-5" href="" style="background-color: #00022b; border-color: white;" (click)="changeAboutPics()">More Pics</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- About End -->
+<!-- Product Start -->
+<div class="container-xxl bg-light my-6 py-6 pt-0">
+  <div class="container">
+      <div class="bg-board text-dark rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row g-4 align-items-center">
+              <div class="col-lg-6">
+                  <h1 class="display-4 text-dark mb-0" style="color: #00006b;">Best Bakery In Your Area</h1>
+              </div>
+              <div class="col-lg-6 text-lg-end">
+                  <div class="d-inline-flex align-items-center text-start">
+                      <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                      <div class="ms-4">
+                          <p class="fs-5 fw-bold mb-0">Call Us</p>
+                          <p class="fs-1 fw-bold mb-0">XXX-XXX-CAKE</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="kancakes_products" class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <p class="text-icon text-uppercase mb-2">Bakery Products</p>
+          <h1 class="display-6" style="color: #00006b;">Explore The Categories Of Our Bakery Products</h1>
+      </div>
+      <div style="padding: 1ch;">
+          <span class="text-icon"><b>Search: </b></span>
+          <input type="text" style="width: 50%; padding: 1ch;" (input)="changeSearchValue($event)">
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;You are searching for {{ searchValue }} . . . </span>
+      </div>
+      <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                  <div class="text-center p-4">
+                      <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">$10 - $70</div>
+                      <h3 class="mb-3">Cake</h3>
+                      <span>Freshly baked and layered with icing to match your taste. Each order will be custom made to suit your occasion.</span>
+                  </div>
+                  <div class="position-relative mt-auto">
+                      <img class="img-fluid" src="assets/img/product-4.jpg" alt="">
+                      <div class="product-overlay">
+                          <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                  <div class="text-center p-4">
+                      <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">$5 - $35</div>
+                      <h3 class="mb-3">Bread</h3>
+                      <span>Long before the crack of dawn, our staff is up and preparing delicious baked goods for you to enjoy as a meal or as snacks.</span>
+                  </div>
+                  <div class="position-relative mt-auto">
+                      <img class="img-fluid" src="assets/img/product-5.jpg" alt="">
+                      <div class="product-overlay">
+                          <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                  <div class="text-center p-4">
+                      <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">$10 - $25</div>
+                      <h4 class="mb-3">Cookies</h4>
+                      <span>Guaranteed to be original and unique to KanCakes bakery - Our recipes aren't just recipes, they are heirlooms.</span>
+                  </div>
+                  <div class="position-relative mt-auto">
+                      <img class="img-fluid" src="assets/img/product-6.jpg" alt="">
+                      <div class="product-overlay">
+                          <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-primary"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Product End -->
+<!-- Service Start -->
+<div id="kancakes_services" class="container-xxl py-6">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <p class="text-icon text-uppercase mb-2">Our Services</p>
+              <h1 class="display-6 mb-4" style="color: #00006b;">What Do We Offer For You?</h1>
+              <p class="mb-5">KanCakes serves traditional baked goods that are fresh, delicious, satisfying and wholesome. We ensure to provide affordable treats without compromising the quality. Our customers can rely on us for baked-food preparation on any occasion.</p>
+              <div class="row gy-5 gx-4">
+                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                      <div class="d-flex align-items-center mb-3">
+                          <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                              <i class="fa fa-bread-slice text-white"></i>
+                          </div>
+                          <h5 class="mb-0">Quality Products</h5>
+                      </div>
+                      <span>We ensure to provide quality and affordable products</span>
+                  </div>
+                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                      <div class="d-flex align-items-center mb-3">
+                          <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                              <i class="fa fa-birthday-cake text-white"></i>
+                          </div>
+                          <h5 class="mb-0">Custom Products</h5>
+                      </div>
+                      <span>Uniquely prepared for your taste and occasion.</span>
+                  </div>
+                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                      <div class="d-flex align-items-center mb-3">
+                          <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                              <i class="fa fa-cart-plus text-white"></i>
+                          </div>
+                          <h5 class="mb-0">Reliable</h5>
+                      </div>
+                      <span>Prepared to serve our goods for any occasiongs.</span>
+                  </div>
+                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                      <div class="d-flex align-items-center mb-3">
+                          <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                              <i class="fa fa-truck text-white"></i>
+                          </div>
+                          <h5 class="mb-0">Eco-Friendly</h5>
+                      </div>
+                      <span>All our equipments are verified: 0% carbon-emission</span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="row img-twice position-relative h-100">
+                  <div class="col-6">
+                      <img class="img-fluid rounded" src="assets/img/service-3.jpg" alt="">
+                  </div>
+                  <div class="col-6 align-self-end">
+                      <img class="img-fluid rounded" src="assets/img/service-4.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Service End -->
+<!-- Team Start -->
+<div id="kancakes_team" class="container-xxl py-6">
+  <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <p class="text-icon text-uppercase mb-2">Our Team</p>
+          <h1 class="display-6 mb-4" style="color: #00006b;">Our Skilled Professionals Behind KanCakes' Savor</h1>
+      </div>
+      <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="assets/img/team-9.jpg" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>Colette Tatou</h5>
+                          <span>Head Chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="assets/img/team-6.jpg" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>Eduardo Pérez</h5>
+                          <span>Senior Chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="assets/img/team-7.jpg" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>David Reed</h5>
+                          <span>Sous Chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="assets/img/team-8.jpg" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>Alfredo Linguini</h5>
+                          <span>Junior Chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Team End -->
+<!-- Testimonial Start -->
+<div id="kancakes_testimonial" class="container-xxl bg-light my-6 py-6 pb-0">
+  <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          <p class="text-icon text-uppercase mb-2">Client's Review</p>
+          <h1 class="display-6 mb-4" style="color: #00006b;">More Than 25000+ Customers Trust Us</h1>
+      </div>
+      <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+        
+          <div class="testimonial-item bg-white rounded p-4" *ngFor="let r of reviews">
+              <div class="d-flex align-items-center mb-4">
+                  <img class="flex-shrink-0 rounded-circle border p-1" src="{{ r.img }}" alt="">
+                  <div class="ms-4">
+                      <h5 class="mb-1">{{ r.name }}</h5>
+                      <span>{{ r.position }}</span>
+                  </div>
+              </div>
+              <p class="mb-0">{{ r.comment }}</p>
+          </div>
+      </div>
+      <h1 class="display-6 mb-4" style="color: #00006b;">Add Your Review</h1>
+      <div style="padding: 1.5ch;">
+        <span class="text-icon"><b>Name: </b></span>
+        <input type="text" style="width: 20%; padding: 1ch;" (input)="addReviewerName($event)">
+        <span class="text-icon"><b>&nbsp;&nbsp;&nbsp;&nbsp;Review: </b></span>
+        <input type="text" style="width: 60%; padding: 1ch;" (input)="addReviewerComment($event)">
+      </div>
+      <div class="testimonial-item rounded p-4" style="background-color: #00006b;" *ngIf="(reviewerName != 'Anonymous' && reviewerName != 'You') || (reviewerComment != 'Write about your experience')">
+        <div class="d-flex align-items-center mb-4">
+            <img class="flex-shrink-0 rounded-circle border p-1" style="width: 4%;" src="assets/img/user.svg" alt="">
+            <div class="ms-4">
+                <h5 class="mb-1" style="color: white;">{{ reviewerName }}</h5>
+                <span style="color: white;">Customer</span>
+            </div>
+        </div>
+        <p class="mb-0" style="color: white;">{{ reviewerComment }}</p>
+    </div>
+      <a id="kancakes_contact" ></a>
+      <div class="bg-primary text-light rounded-top p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row align-items-center">
+              <div class="col-md-6">
+                  <h1 class="display-4 text-light mb-0">Subscribe To Be Informed About Special Offers</h1>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <form class="position-relative" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+                      <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" style="color:white;" formControlName="email">
+                      <button type="button" class="btn btn-secondary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2" (click)="onSubmit()">SignUp</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</div>
+<!-- Testimonial End -->
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+      <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Office Address</h4>
+              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Toronto, Canada</p>
+              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>XXX-KAN-CAKE</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3"></i>usr@kancakes.com</p>
+              <div class="d-flex pt-2">
+                  <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <a class="btn btn-link" href="">About Us</a>
+              <a class="btn btn-link" href="">Contact Us</a>
+              <a class="btn btn-link" href="">Our Services</a>
+              <a class="btn btn-link" href="">Terms & Condition</a>
+              <a class="btn btn-link" href="">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <a class="btn btn-link" href="">About Us</a>
+              <a class="btn btn-link" href="">Contact Us</a>
+              <a class="btn btn-link" href="">Our Services</a>
+              <a class="btn btn-link" href="">Terms & Condition</a>
+              <a class="btn btn-link" href="">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-light mb-4">Photo Gallery</h4>
+              <div class="row g-2">
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-6.jpg" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-5.jpg" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-4.jpg" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-5.jpg" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-6.jpg" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid bg-light rounded p-1" src="assets/img/product-1.jpg" alt="Image">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Footer End -->
+<!-- Copyright Start -->
+<div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">KanCakes</a>, All Right Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://therichpost.com/credit-removal". Thank you for your support. ***/-->
+              Designed By <a href="http://kannikakabilar.github.io">Kannika Kabilar<br></a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Copyright End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
