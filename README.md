@@ -1,7 +1,7 @@
 # KanCakes-EcommerceSite
 An ecommerce website coded using Angular15 framework for frontend along bootstap and JavaScript
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/uaBB5PYc2yY/0.jpg)](https://www.youtube.com/watch?v=uaBB5PYc2yY "KanCakes Demo")
+[![IMAGE ALT TEXT](https://github.com/kannikakabilar/KanCakes-EcommerceSite/blob/main/screenshots/Screen%20Shot%202023-02-26%20at%201.51.02%20PM.png)](https://www.youtube.com/watch?v=uaBB5PYc2yY "KanCakes Demo")
 
 https://www.youtube.com/watch?v=uaBB5PYc2yY
 
