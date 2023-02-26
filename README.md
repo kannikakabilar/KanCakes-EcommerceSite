@@ -1,7 +1,9 @@
 # KanCakes-EcommerceSite
 An ecommerce website coded using Angular15 framework for frontend along bootstap and JavaScript
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uaBB5PYc2yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/uaBB5PYc2yY/0.jpg)](https://www.youtube.com/watch?v=uaBB5PYc2yY "KanCakes Demo")
+
+https://www.youtube.com/watch?v=uaBB5PYc2yY
 
 # How to run
 - Open terminal and navigate to where the project is cloned/downloaded
