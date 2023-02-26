@@ -1,6 +1,7 @@
 # KanCakes-EcommerceSite
 An ecommerce website coded using Angular15 framework for frontend along bootstap and JavaScript
 [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=uaBB5PYc2yY)
+<video src='https://www.youtube.com/watch?v=uaBB5PYc2yY'/>
 
 # How to run
 - Open terminal and navigate to where the project is cloned/downloaded
