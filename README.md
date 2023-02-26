@@ -1,6 +1,6 @@
 # KanCakes-EcommerceSite
 An ecommerce website coded using Angular15 framework for frontend along bootstap and JavaScript
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=uaBB5PYc2yY)
 
 # How to run
 - Open terminal and navigate to where the project is cloned/downloaded
@@ -25,4 +25,25 @@ Go to the browser to this url: http://localhost:4200 and explore through the Kan
   - The form will indicate/react accordingly depending on if user enters a valid or an invalid email
   
 # File Structure
+```
+.
+├── KanCakes-EcommerceSite/
+│   ├── README.MD
+│   ├── .editorconfig
+│   ├── angular.json
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.spec.json
+│   ├── .angular/
+│   ├── node_modules/
+│   └── src/
+│   │   ├── styles.css
+│   │   ├── main.ts
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── app/
+│   │   └── assets/
 
+```
